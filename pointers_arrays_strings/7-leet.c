@@ -19,8 +19,7 @@ char *leet(char *s)
 				s[i] = numbers[j];
 				break;
 			}
-
-	}
-	
+		}
 	return (s);
+	}
 }
