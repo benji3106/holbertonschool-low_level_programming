@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * _strlen - retourne la longueur d'une chaîne
- * @s: chaîne
- * Return: longueur
+ * _strlen - returns the length of a string
+ * @s: string
+ * Return: length
  */
 int _strlen(char *s)
 {
@@ -16,7 +16,7 @@ int _strlen(char *s)
 	return (i);
 }
 /**
- * _strcpy - copie une chaîne dans une autre
+ * _strcpy - copies one string into another
  * @dest: destination
  * @src: source
  * Return: dest
@@ -32,11 +32,11 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 /**
- * new_dog - crée un nouveau chien
- * @name: nom du chien
- * @age: âge du chien
- * @owner: propriétaire du chien
- * Return: pointeur vers dog_t, ou NULL en cas d’erreur
+ * new_dog - creates a new dog
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: dog's owner
+ * Return: pointer to dog_t, or NULL in case of an error
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
