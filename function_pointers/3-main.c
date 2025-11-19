@@ -1,6 +1,18 @@
 #include "3-calc.h"
 #include <stdio.h>
 
+/**
+ * main - Entry point of the program
+ * @argc: Number of arguments
+ * @argv: Array of arguments
+ *
+ * Return: 0 on success
+ *
+ * Description: This program performs simple mathematical operations.
+ *              It checks for correct argument count, validates the
+ *              operator, handles division/modulo by zero, and prints
+ *              the result of the operation.
+ */
 int main(int argc, char *argv[])
 {
 	int num1, num2;
@@ -13,7 +25,7 @@ int main(int argc, char *argv[])
 	}
 
 	op_func = get_op_func(argv[2]);
-	if (op_func == NULL)
+	if (op_func == NULL || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
