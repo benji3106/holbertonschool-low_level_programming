@@ -16,8 +16,8 @@ void print_string(va_list args);
  * f: float
  * s: char * (if NULL, print (nil))
  */
- void print_all(const char * const format, ...)
- {
+void print_all(const char * const format, ...)
+{
 	va_list args;
 	int i = 0;
 	int j;
@@ -47,9 +47,9 @@ void print_string(va_list args);
 			j++;
 		}
 		i++;
- 	}
+	}
 
- 	printf("\n");
+	printf("\n");
 
 	va_end(args);
 }
